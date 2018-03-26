@@ -14,7 +14,11 @@ html {
 	}
 }
 
+.container_sm {
+	padding: 0 30px;
+}
+
 //Компоненты
 @import "components/_header.scss";
 @import "components/_cover.scss";
-
+@import "components/_features.scss";

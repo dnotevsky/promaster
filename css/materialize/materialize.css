@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -3288,33 +3289,27 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1 {
   font-size: 4.2rem;
-  line-height: 110%;
-  margin: 2.8rem 0 1.68rem 0; }
+  line-height: 110%; }
 
 h2 {
   font-size: 1.125rem;
-  line-height: 110%;
-  margin: 0.75rem 0 0.45rem 0; }
+  line-height: 110%; }
 
 h3 {
   font-size: 2.92rem;
-  line-height: 110%;
-  margin: 1.94667rem 0 1.168rem 0; }
+  line-height: 110%; }
 
 h4 {
   font-size: 2.28rem;
-  line-height: 110%;
-  margin: 1.52rem 0 0.912rem 0; }
+  line-height: 110%; }
 
 h5 {
   font-size: 1.64rem;
-  line-height: 110%;
-  margin: 1.09333rem 0 0.656rem 0; }
+  line-height: 110%; }
 
 h6 {
   font-size: 1.15rem;
-  line-height: 110%;
-  margin: 0.76667rem 0 0.46rem 0; }
+  line-height: 110%; }
 
 em {
   font-style: italic; }
@@ -3330,6 +3325,13 @@ small {
 
 .thin {
   font-weight: 200; }
+
+p {
+  color: #000000;
+  font-size: 0.75rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 1.667; }
 
 @media only screen and (min-width: 360px) {
   .flow-text {

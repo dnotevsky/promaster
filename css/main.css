@@ -23,13 +23,15 @@ html {
   content: "";
   clear: both; }
 
+.container_sm {
+  padding: 0 30px; }
+
 .header {
   background: #fff;
   padding: 25px 0 30px;
   font-family: 'Open Sans', sans-serif; }
   .header .container {
-    margin-bottom: 0;
-    padding: 0 30px; }
+    margin-bottom: 0; }
   .header__btn {
     color: #000;
     float: right;
@@ -218,5 +220,44 @@ html {
       left: -85px; }
     .cover .carousel__next {
       right: -85px; }
+
+.features {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  border-bottom: 2px solid #e9e9e9; }
+  .features__h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    line-height: 1.111; }
+  .features__item {
+    padding: 0 65px 0 65px !important; }
+    .features__item:nth-child(1) {
+      background: url("../img/icons/features_1.png") left 5px no-repeat; }
+    .features__item:nth-child(2) {
+      background: url("../img/icons/features_2.png") left 5px no-repeat; }
+    .features__item:nth-child(3) {
+      background: url("../img/icons/features_3.png") left 5px no-repeat; }
+    .features__item:nth-child(1) {
+      position: relative; }
+      .features__item:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        right: 31px;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 23px;
+        height: 59px;
+        background: url("../img/icons/features_arrow.svg") center center no-repeat; }
+    .features__item:nth-child(2) {
+      position: relative; }
+      .features__item:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        right: 31px;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 23px;
+        height: 59px;
+        background: url("../img/icons/features_arrow.svg") center center no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
