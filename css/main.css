@@ -1,3 +1,156 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit; }
 
+ul,
+ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  background: #fff;
+  padding: 30px 0 40px;
+  font-family: 'Open Sans', sans-serif; }
+  .header__btn {
+    color: #000;
+    float: right;
+    font-size: 0.938rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 700;
+    width: 100%;
+    max-width: 292px;
+    text-align: center; }
+    .header__btn .btn__text {
+      margin-left: 15px; }
+    .header__btn .btn__badge {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      padding: 0 4px 1px;
+      font-size: 0.938rem;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      font-weight: 700;
+      text-align: center;
+      border-radius: 4px;
+      border-width: 1px;
+      border-color: #6f6f6f;
+      border-style: solid; }
+
+.start-nav {
+  width: 260px;
+  margin-bottom: 38px; }
+  .start-nav__login {
+    float: left; }
+  .start-nav__lang {
+    float: right; }
+  .start-nav__li {
+    display: inline-block;
+    text-transform: uppercase; }
+    .start-nav__li_reg {
+      position: relative;
+      margin-right: 20px; }
+      .start-nav__li_reg::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        margin-right: 7px;
+        width: 10px;
+        height: 11px;
+        background: url("../img/icons/user.png") center center no-repeat; }
+      .start-nav__li_reg::after {
+        content: "";
+        position: absolute;
+        top: 54%;
+        transform: translate(0, -50%);
+        right: -13px;
+        width: 1px;
+        height: 12px;
+        background: rgba(0, 0, 0, 0.4); }
+    .start-nav__li_ru {
+      margin-right: 7px; }
+    .start-nav__li_active {
+      position: relative; }
+      .start-nav__li_active::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background: #fef224; }
+    .start-nav__li > a {
+      color: #000000;
+      font-size: 0.75rem;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      font-weight: 400;
+      line-height: 1.667;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      text-align: left; }
+
+.nav__ul {
+  width: 100%; }
+.nav__li {
+  text-align: left; }
+  .nav__li:nth-child(1) {
+    width: 188px; }
+  .nav__li:nth-child(2) {
+    width: 108px; }
+  .nav__li:nth-child(3) {
+    width: 102px; }
+.nav__link {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.5rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 0.833;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+  transition: .3s ease-in-out all;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  padding-bottom: 10px; }
+  .nav__link:hover {
+    font-weight: 600;
+    border-bottom: 2px solid #fef224; }
+
+.phone__link {
+  color: #000000;
+  font-size: 1.313rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 700;
+  line-height: 1.429;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  text-align: left;
+  display: block;
+  text-align: right; }
+.phone__text {
+  display: block;
+  text-align: right;
+  margin-top: -9px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #616161;
+  font-size: 0.563rem;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+  font-weight: 400;
+  line-height: 3.333;
+  /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */ }
+
+html {
+  font-size: 16px; }
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both; }
 
 /*# sourceMappingURL=main.css.map */

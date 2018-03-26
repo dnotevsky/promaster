@@ -1,4 +1,18 @@
-@import "colors.scss";
+@import "general/_reset.scss";
+@import "general/_variables.scss";
+@import "general/_fonts.scss";
 
 //Компоненты
-@import "header.scss";
+@import "components/_header.scss";
+
+html {
+	font-size: 16px;
+}
+
+.clearfix {
+	&::after {
+		display: table;
+		content: "";
+		clear: both;
+	}
+}

@@ -4,7 +4,7 @@
 			<!--Import Google Icon Font-->
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<!--Import materialize.css-->
-			<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+			<link type="text/css" rel="stylesheet" href="css/materialize/materialize.css"  media="screen,projection"/>
 
 			<!--Let browser know website is optimized for mobile-->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,11 +13,11 @@
 
 		<body>
 			<div class="header">
-				<div class="container header__container">
-					<a href="#" class="brand-logo left header__brand-logo"><img src="img/logo.png" alt="Pro Masters"></a>
+				<div class="container row header__container">
+					<a href="#" class="col s3 brand-logo left header__brand-logo"><img src="img/logo.png" alt="Pro Masters" class="responsive-img"></a>
 
-					<div class="center header__center">
-						<div class="start-nav">
+					<div class="col s5 center header__center">
+						<div class="clearfix start-nav">
 							<div class="start-nav__login">
 								<ul class="start-nav__ul">
 									<li class="start-nav__li start-nav__li_reg"><a href="#">Регистрация</a></li>
@@ -26,13 +26,13 @@
 							</div>
 							<div class="start-nav__lang">
 								<ul class="start-nav__ul">
-									<li class="start-nav__li start-nav__li_ru"><a href="#">Ru</a></li>
+									<li class="start-nav__li start-nav__li_active start-nav__li_ru"><a href="#">Ru</a></li>
 									<li class="start-nav__li start-nav__li_ro"><a href="#">Ro</a></li>
 								</ul>
 							</div>
 						</div>
 						<nav class="nav header__nav">
-							<div class="nav-wrapper">
+							<div class="nav-wrapper valign-wrapper">
 								<ul id="nav-mobile" class="center hide-on-med-and-down nav__ul">
 									<li class="nav__li"><a href="#" class="nav__link">Исполнители</a></li>
 									<li class="nav__li"><a href="#" class="nav__link">Заказы</a></li>
@@ -42,12 +42,12 @@
 						</nav>
 					</div>
 					
-					<div class="right header__right">
+					<div class="col s4 right header__right">
 						<div class="phone">
 							<a href="tel:+79686371122" class="phone__link">968 637-11-22</a>
 							<span class="phone__text">Помощь и поддержка</span>
 						</div>
-						<button class="btn btn-order btn__header"><span class="btn__text">Добавить заказ</span><span class="btn__num">4</span></button>
+						<button class="waves-effect waves-light btn btn-order header__btn"><span class="btn__text">Добавить заказ</span><span class="badge btn__badge">4</span></button>
 					</div>
 				</div>
 			</div>
