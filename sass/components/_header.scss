@@ -1,7 +1,11 @@
 .header {
 	background: #fff;
-	padding: 30px 0 40px;
+	padding: 25px 0 30px;
 	font-family: 'Open Sans', sans-serif;
+	.container {
+		margin-bottom: 0;
+		padding: 0 30px;
+	}
 	&__btn {
 		color: #000;
 		float: right;
@@ -37,6 +41,29 @@
 	}
 	&__lang {
 		float: right;
+		.start-nav__li {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: -3px;
+				width: 100%;
+				height: 2px;
+				background: $primary-color;
+				opacity: 0;
+			}
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+			}
+			&_active {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
 	}
 	&__li {
 		display: inline-block;
@@ -66,18 +93,6 @@
 		}
 		&_ru {
 			margin-right: 7px;
-		}
-		&_active {
-			position: relative;
-			&::before {
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: -3px;
-				width: 100%;
-				height: 2px;
-				background: $primary-color;
-			}
 		}
 		> a {
 			color:  #000000;

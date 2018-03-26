@@ -2,9 +2,6 @@
 @import "general/_variables.scss";
 @import "general/_fonts.scss";
 
-//Компоненты
-@import "components/_header.scss";
-
 html {
 	font-size: 16px;
 }
@@ -16,3 +13,8 @@ html {
 		clear: both;
 	}
 }
+
+//Компоненты
+@import "components/_header.scss";
+@import "components/_cover.scss";
+
