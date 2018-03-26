@@ -3687,6 +3687,7 @@ p {
   line-height: 53px;
   padding: 0 16px;
   text-transform: uppercase;
+  color: #000;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
 
@@ -3757,7 +3758,7 @@ p {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   background-color: #fef224;
   text-align: center;
   letter-spacing: .5px;

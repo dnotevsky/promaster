@@ -8,6 +8,7 @@
   line-height: $button-height;
   padding: $button-padding;
   text-transform: uppercase;
+  color: #000;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; // Gets rid of tap active state
 }
@@ -64,7 +65,7 @@
 // Raised Button
 .btn {
   text-decoration: none;
-  color: $button-raised-color;
+  color: #000;
   background-color: $button-raised-background;
   text-align: center;
   letter-spacing: .5px;
