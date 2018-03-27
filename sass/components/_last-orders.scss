@@ -1,0 +1,33 @@
+.last-orders {
+	padding: 60px 0 0;
+	&__h2 {
+		margin-bottom: 17px;
+	}
+	&__today {
+		color:  #8c8c8c;
+		font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		text-align: right;
+		&_num {
+			color: #000;
+		}
+	}
+	table {
+		tr {
+			td {
+				img {
+					float: left;
+					width: 40px;
+					margin-right: 20px;
+				}
+				h3 {
+					max-width: 400px;
+				}
+				.table__btn {
+					display: block;
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}

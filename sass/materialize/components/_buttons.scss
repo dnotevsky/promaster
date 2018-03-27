@@ -10,7 +10,16 @@
   text-transform: uppercase;
   color: #000;
   vertical-align: middle;
-  -webkit-tap-highlight-color: transparent; // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+  &.table__btn {
+    width: 150px;
+    height: 33px;
+    line-height: 33px;
+    color:  #000000;
+    font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 // Disabled shared style

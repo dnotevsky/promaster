@@ -2277,11 +2277,88 @@ tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
 
 td, th {
-  padding: 15px 5px;
+  padding: 7px 0;
   display: table-cell;
   text-align: left;
-  vertical-align: middle;
-  border-radius: 2px; }
+  vertical-align: middle; }
+  td.td__order, th.td__order {
+    display: flex;
+    align-items: center; }
+  td.td__city, th.td__city {
+    color: #6c6c6c;
+    padding-right: 14px;
+    font-size: 0.75rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 400;
+    line-height: 1.667;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    text-align: left; }
+    td.td__city::before, th.td__city::before {
+      content: "location_on";
+      top: 2px;
+      position: relative;
+      display: inline-block;
+      font-family: 'Material Icons';
+      color: #9e9e9e;
+      font-size: 14px;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      font-weight: 400;
+      line-height: 1;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: 'liga';
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased; }
+  td.td__date, th.td__date {
+    color: #8c8c8c;
+    padding-right: 30px;
+    font-size: 0.75rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 400;
+    text-align: left; }
+  td.td__members, th.td__members {
+    position: relative;
+    padding-left: 25px;
+    color: #000000;
+    padding-right: 30px;
+    font-size: 1.125rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 400;
+    line-height: 1.111;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    text-align: left; }
+    td.td__members::before, th.td__members::before {
+      content: "group";
+      top: 15px;
+      position: absolute;
+      left: -4px;
+      display: inline-block;
+      font-family: 'Material Icons';
+      color: #878787;
+      font-size: 23px;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      font-weight: 400;
+      line-height: 1;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: 'liga';
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased; }
+  td.td__price, th.td__price {
+    color: #000000;
+    padding-right: 20px;
+    font-size: 0.75rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 400;
+    line-height: 1.667;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    text-align: left; }
+    td.td__price .td__price_num, th.td__price .td__price_num {
+      color: #000000;
+      font-size: 1.25rem;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      font-weight: 600;
+      line-height: 1;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      text-align: left; }
 
 @media only screen and (max-width: 992px) {
   table.responsive-table {
@@ -3296,7 +3373,7 @@ h2 {
   line-height: 110%; }
 
 h3 {
-  font-size: 2.92rem;
+  font-size: 0.813rem;
   line-height: 110%; }
 
 h4 {
@@ -3690,6 +3767,16 @@ p {
   color: #000;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
+  .btn.table__btn, .table__btn.btn-large, .table__btn.btn-small,
+  .btn-flat.table__btn {
+    width: 150px;
+    height: 33px;
+    line-height: 33px;
+    color: #000000;
+    font-size: 0.75rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 700;
+    text-align: center; }
 
 .btn.disabled, .disabled.btn-large, .disabled.btn-small,
 .btn-floating.disabled,

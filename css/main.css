@@ -260,4 +260,26 @@ html {
         height: 59px;
         background: url("../img/icons/features_arrow.svg") center center no-repeat; }
 
+.last-orders {
+  padding: 60px 0 0; }
+  .last-orders__h2 {
+    margin-bottom: 17px; }
+  .last-orders__today {
+    color: #8c8c8c;
+    font-size: 0.75rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 400;
+    text-align: right; }
+    .last-orders__today_num {
+      color: #000; }
+  .last-orders table tr td img {
+    float: left;
+    width: 40px;
+    margin-right: 20px; }
+  .last-orders table tr td h3 {
+    max-width: 400px; }
+  .last-orders table tr td .table__btn {
+    display: block;
+    margin-left: auto; }
+
 /*# sourceMappingURL=main.css.map */
