@@ -1,0 +1,72 @@
+.statistics {
+	padding: 40px 0;
+	&__item {
+		p {
+			color:  #282828;
+			font-size: 1rem;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+		&:nth-child(1){
+			text-align: right;
+			p {
+				&::before {
+					top: 10px;
+					margin-right: 20px;
+					content: "";
+					position: relative;
+					display: inline-block;
+					width: 54px;
+					height: 44px;
+					background: url("../img/icons/masters.png") center center no-repeat;
+				}
+			}
+		}
+		&:nth-child(2){
+			text-align: center;
+			p {
+				&::before {
+				      content: "location_on";
+				      top: 8px;
+				      margin-right: 10px;
+				      position: relative;
+				      display: inline-block;
+				      font-family: 'Material Icons';
+				      color:  #d0d0d0;
+				      font-size: 43px;/* Приближение из-за подстановки шрифтов */
+				      font-weight: 400; 
+				      line-height: 1;  
+				      text-rendering: optimizeLegibility;
+				      font-feature-settings: 'liga';
+				      -webkit-font-feature-settings: 'liga';
+				      -webkit-font-smoothing: antialiased;
+				    }
+				 }
+		}
+		&:nth-child(3){
+			text-align: left;
+			p {
+				&::before {
+					top: 10px;
+					margin-right: 17px;
+					content: "";
+					position: relative;
+					display: inline-block;
+					width: 55px;
+					height: 39px;
+					background: url("../img/icons/auc.png") center center no-repeat;
+				}
+			}
+		}
+	}
+	&__num {
+		color:  #282828;
+		font-size: 2rem;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		text-align: left;
+	}
+	&__text {
+		margin-left: 10px;
+		position: relative;
+		top: -6px;
+	}
+}

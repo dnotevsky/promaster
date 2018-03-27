@@ -282,4 +282,62 @@ html {
     display: block;
     margin-left: auto; }
 
+.statistics {
+  padding: 40px 0; }
+  .statistics__item p {
+    color: #282828;
+    font-size: 1rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 300; }
+  .statistics__item:nth-child(1) {
+    text-align: right; }
+    .statistics__item:nth-child(1) p::before {
+      top: 10px;
+      margin-right: 20px;
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 54px;
+      height: 44px;
+      background: url("../img/icons/masters.png") center center no-repeat; }
+  .statistics__item:nth-child(2) {
+    text-align: center; }
+    .statistics__item:nth-child(2) p::before {
+      content: "location_on";
+      top: 8px;
+      margin-right: 10px;
+      position: relative;
+      display: inline-block;
+      font-family: 'Material Icons';
+      color: #d0d0d0;
+      font-size: 43px;
+      /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+      font-weight: 400;
+      line-height: 1;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: 'liga';
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased; }
+  .statistics__item:nth-child(3) {
+    text-align: left; }
+    .statistics__item:nth-child(3) p::before {
+      top: 10px;
+      margin-right: 17px;
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 55px;
+      height: 39px;
+      background: url("../img/icons/auc.png") center center no-repeat; }
+  .statistics__num {
+    color: #282828;
+    font-size: 2rem;
+    /* ╨Я╤А╨╕╨▒╨╗╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕╨╖-╨╖╨░ ╨┐╨╛╨┤╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╤И╤А╨╕╤Д╤В╨╛╨▓ */
+    font-weight: 400;
+    text-align: left; }
+  .statistics__text {
+    margin-left: 10px;
+    position: relative;
+    top: -6px; }
+
 /*# sourceMappingURL=main.css.map */
