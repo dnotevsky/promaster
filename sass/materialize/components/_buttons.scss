@@ -1,6 +1,5 @@
 // shared styles
-.btn,
-.btn-flat {
+.btn{
   border: $button-border;
   border-radius: $button-radius;
   display: inline-block;
@@ -19,6 +18,32 @@
     font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     text-align: center;
+  }
+}
+
+.btn.btn-flat {
+  height: 41px;
+  line-height: 39px;
+  border-width: 1px;
+  border-color:  #b7b7b7;
+  border-style: solid;
+  width: 160px;
+  padding: 0 !important;
+  letter-spacing: 0px;
+  font-family: "OpenSans", sans-serif;
+  border-radius: $button-radius;
+  color:  #ffffff;
+  font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+  background: rgba(255,255,255,0);
+  display: inline-block;
+  padding: $button-padding;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  &:hover {
+    color: #000;
   }
 }
 

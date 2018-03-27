@@ -375,9 +375,32 @@ ul.staggered-list li {
 
 // Footer
 .page-footer {
-  padding-top: 20px;
+  padding: 50px 0 40px;
   color: $footer-font-color;
-  background-color: $footer-bg-color;
+  background: $footer-bg-color;
+  border-top: 4px solid $footer-bg-color;
+  border-image: url("../../img/line.png") 4 0 0 0 repeat;
+
+  p.text {
+    color:  #e6e6e6;
+    padding-left: 43px;
+    font-size: 0.625rem;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 2.4;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    i {
+      color:  #e6e6e6;
+      font-size: 0.625rem;/* Приближение из-за подстановки шрифтов */
+      font-style: italic;
+      line-height: 2.4;/* Приближение из-за подстановки шрифтов */
+      text-align: left;
+    }
+  }
+
+  .btn.btn-flat {
+    margin-top: 10px;
+  }
 
   .footer-copyright {
     overflow: hidden;
@@ -385,9 +408,105 @@ ul.staggered-list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 0;
+    margin-top: -15px;
     color: $footer-copyright-font-color;
     background-color: $footer-copyright-bg-color;
+    .row {
+      margin-bottom: 0;
+    }
+    .text {
+      padding-left: 54px;
+      color:  #e6e6e6;
+      text-transform: uppercase;
+      font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+      font-weight: 400;
+      line-height: 2.5;/* Приближение из-за подстановки шрифтов */
+      text-align: left;
+      sup {
+        font-size: .5rem;
+      }
+    }
+    .footer__nav {
+      height: auto;
+      line-height: 0;
+      li {
+        float: left;
+        margin-right: 30px;
+        a.nav__link {
+          color:  #ffffff;
+          font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+          font-weight: 400;
+          line-height: 2.167;/* Приближение из-за подстановки шрифтов */
+          text-align: left;
+          white-space: nowrap;
+        }
+      }
+      background: transparent;
+    }
+  }
+
+  .footer__links {
+    margin: 10px -0.75rem;
+    margin-left: -20px;
+    li {
+      a {
+        position: relative;
+        float: left;
+        margin-right: 7px;
+        display: block;
+        border-radius: 50%;
+        background-color:  #3a3a3a;
+        width: 41px;
+        height: 41px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../../img/icons/socials.png");
+          background-repeat: no-repeat;
+        }
+      }
+      &:nth-child(1) {
+        a {
+          &::after {
+            width: 10px;
+            height: 20px;
+            background-position: 0 0;
+          }
+        }
+      }
+      &:nth-child(2) {
+        a {
+          &::after {
+            width: 20px;
+            height: 16px;
+            background-position: -44px -2px;
+          }
+        }
+      }
+      &:nth-child(3) {
+        a {
+          &::after {
+            width: 16px;
+            height: 14px;
+            background-position: -95px -3px;
+          }
+        }
+      }
+      &:nth-child(4) {
+        a {
+          margin-right: 0;
+          &::after {
+            width: 16px;
+            height: 14px;
+            background-position: -145px -3px;
+          }
+        }
+      }
+    }
   }
 }
 
