@@ -111,6 +111,21 @@ textarea.materialize-textarea {
   }
 }
 
+.input-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color:  #000000;
+  text-transform: uppercase;
+  font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.667;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.input-wrapper {
+   margin-bottom: 20px;
+}
+
 
 /* Validation Sass Placeholders */
 %valid-input-style {

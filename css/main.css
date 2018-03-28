@@ -337,4 +337,11 @@ html {
     position: relative;
     top: -6px; }
 
+.menu__h2 {
+  margin-bottom: 45px;
+  color: #6c6c6c;
+  font-weight: 400; }
+.menu .search-btn {
+  margin-top: 10px; }
+
 /*# sourceMappingURL=main.css.map */

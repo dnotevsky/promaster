@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!--Import Google Icon Font-->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import materialize.css-->
+			<link type="text/css" rel="stylesheet" href="css/materialize/materialize.css"  media="screen,projection"/>
+
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+			<link rel="stylesheet" href="css/nouislider.min.css">
+
+			<!--Let browser know website is optimized for mobile-->
+			<meta name="viewport" content="width=1600"/>
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+
+		<body>
+			<div class="header">
+				<div class="container row container_sm header__container">
+					<a href="#" class="col s12 m3 brand-logo left header__brand-logo"><img src="img/logo.png" alt="Pro Masters" class="responsive-img"></a>
+
+					<div class="col s12 m5 center header__center">
+						<div class="clearfix start-nav">
+							<div class="start-nav__login">
+								<ul class="start-nav__ul">
+									<li class="start-nav__li start-nav__li_reg"><a href="#">Регистрация</a></li>
+									<li class="start-nav__li start-nav__li_log"><a href="#">Вход</a></li>
+								</ul>
+							</div>
+							<div class="start-nav__lang">
+								<ul class="start-nav__ul">
+									<li class="start-nav__li start-nav__li_active start-nav__li_ru"><a href="#">Ru</a></li>
+									<li class="start-nav__li start-nav__li_ro"><a href="#">Ro</a></li>
+								</ul>
+							</div>
+						</div>
+						<nav class="nav header__nav">
+							<div class="nav-wrapper valign-wrapper">
+								<ul id="nav-mobile" class="center hide-on-med-and-down nav__ul">
+									<li class="nav__li"><a href="#" class="nav__link">Исполнители</a></li>
+									<li class="nav__li"><a href="#" class="nav__link">Заказы</a></li>
+									<li class="nav__li"><a href="#" class="nav__link">Форум</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					
+					<div class="col s12 m4 right header__right">
+						<div class="phone">
+							<a href="tel:+79686371122" class="phone__link">968 637-11-22</a>
+							<span class="phone__text">Помощь и поддержка</span>
+						</div>
+						<button class="waves-effect waves-light btn btn-order header__btn"><span class="btn__text">Добавить заказ</span><span class="badge btn__badge">4</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="container container_sm">
+					<div class="row">
+						<form class="col l3 s12 menu" action="" method="">
+							<h2 class="menu__h2">Фильтр заказов</h2>
+							<div class="select-wrapper">
+								<label for="select-city" class="select-label">Город</label>
+								<select class="basic-select" name="city" id="select-city">
+								  <option value="KV">Кишинев</option>
+								  <option value="MW">Москва</option>
+								  <option value="TL">Таллин</option>
+								  <option value="RG">Рига</option>
+								  <option value="ML">Молодечно</option>
+								</select>
+							</div>
+							<div class="select-wrapper">
+								<label for="select-specialization" class="select-label">Специализации</label>
+								<select class="multiple-select" name="city" id="select-specialization" multiple="multiple">
+								  <option value=""></option>
+								  <option value="1">Отделочные работы</option>
+								  <option value="2">Ремонт и строительство</option>
+								  <option value="3">Lorem ipsum dolor.</option>
+								  <option value="4">Lorem ipsum.</option>
+								  <option value="5">amet, consectetur.</option>
+								</select>
+								<ul class="selected">
+									<li class="selected__li">
+										<span class="selected__text">Отделочные работы</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Ремонт и строительство</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Отделочные работы</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Lorem ipsum.</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Non inventore</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Doloremque ab eaque</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">expedita aspernatur</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">inventore voluptatum</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Dignissimos dicta tempora</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Qui incidunt</span><button class="selected__btn"></button>
+									</li>
+									<li class="selected__li">
+										<span class="selected__text">Porro fugiat</span><button class="selected__btn"></button>
+									</li>
+								</ul>
+							</div>
+							<div class="input-wrapper">
+								<label for="budget" class="input-label">Бюджет</label>
+								<div class="range-slider" id="budget"></div>
+								<div class="range-inputs">
+									<input type="text" class="range-slider__min" min="0" max="100000" value="0">
+									<input type="text" class="range-slider__max" min="0" max="100000" value="40 000">
+								</div>
+							</div>
+							<button class="waves-effect waves-light btn search-btn" type="submit"><i class="material-icons">search</i> Поиск</button>
+						</form>
+						<div class="col l9 s12 orders">
+							<table>
+								<thead>
+									<tr>
+										<th>Найдено заказов <span class="num">40</span></th>
+										<th>Сортировать по <button class="btn">Дата добавления</button>
+										<button class="btn">Бюджет</button>
+										<button class="btn">Участники</button></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="img/orders-page/1.jpg" alt=""></td>
+										<td>
+											<h2>Частичный ремонт кухонной комнаты</h2>
+											<div class="subhead">
+												<span class="city">г. Кишинев</span> <a href="#" class="author">Галина Бунеева</a> <span class="date">24.02.2016</span>
+											</div>
+											<p class="description">Провести ремонтные работы по адресу г.Москва, Плеханова. В составе: Замена электропроводки, с установкой: квартирного электрощитка с размыкателями на 4 линии прокладку. Высота здания 12-17 этажей. Требуется сборка-разборка лесов, монтаж минваты 100м. на клей с дюбелированием, армирование, ... <a href="#" class="description__more">Подробнее</a></p>
+											<div class="bottom">
+												<p class="bottom__spec">Специализация: <span>Ремонт квартиры</span></p>
+												<span class="members">48</span>
+												<span class="price"> <span class="num">50 000</span> леев</span>
+												<a href="#" class="waves-effect waves-light btn-small">Участвовать</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="page-footer">
+	          <div class="container container_sm">
+	            <div class="row">
+		            <div class="col l1 s12">
+		                <img src="img/logo_white.png" alt="Pro Master">
+		              </div>
+		              <div class="col l4-5 s12">
+		                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor debitis quasi labore, odit earum ipsa neque, iure repudiandae aut magni nihil voluptates possimus sequi quia illo saepe deserunt. <i>"fuga Unde."</i></p>
+		              </div>
+		              <div class="col l2 offset-l0-5 s12">
+		              	<a href="#" class="waves-effect waves-light btn btn-flat">Как это работает?</a>
+		              </div>
+		              <div class="col l2 offset-l1 s12 right">
+		              	<ul class="footer__links">
+		              		<li><a href="#"></a></li>
+		              		<li><a href="#"></a></li>
+		              		<li><a href="#"></a></li>
+		              		<li><a href="#"></a></li>
+		              	</ul>
+		              </div>
+	            </div>
+	          </div>
+	          <div class="footer-copyright">
+		            <div class="container container_sm">
+		            	<div class="row">
+		            		<div class="col l5 offset-l1 s12 text">
+		            			© Портал мастеров &laquo;ProMaster<sup>TM</sup>&raquo; 2015-2016
+		            		</div>
+		            		<div class="col l6 s12 right">
+		            			<nav class="nav footer__nav">
+									<div class="nav-wrapper valign-wrapper">
+										<ul id="nav-mobile" class="center hide-on-med-and-down nav__ul">
+											<li class="nav__li"><a href="#" class="nav__link">О проекте</a></li>
+											<li class="nav__li"><a href="#" class="nav__link">Центр доверия и безопасности</a></li>
+											<li class="nav__li"><a href="#" class="nav__link">Обратная связь</a></li>
+											<li class="nav__li"><a href="#" class="nav__link">Правила использования</a></li>
+										</ul>
+									</div>
+								</nav>
+		            		</div>
+		            	</div>
+		            </div>
+	          </div>
+	        </footer>
+
+			<!--JavaScript at end of body for optimized loading-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script type="text/javascript" src="js/materialize.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+			<script src="js/nouislider.min.js"></script>
+			<script src="js/common.js"></script>
+		</body>
+	</html>

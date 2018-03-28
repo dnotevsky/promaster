@@ -46,5 +46,67 @@ $(document).ready(function main() {
 	});
 
 
-	window.Carousel = Carousel;
+	//Класс Select
+	var SelectPrototype = {
+		init: function init(options) {
+			$(this.element).select2(options);
+		}
+	};
+
+	function Select(options) {
+		this.element = options.element;
+		this.init(options);
+	};
+
+	Select.prototype = Object.create(SelectPrototype);
+	Select.prototype.constructor = Select;
+
+	var basicSelect = $('.basic-select');
+	$(basicSelect).each(function(index, select) {
+		select = new Select({
+			element: select
+		});
+	});
+
+	//Подкласс MultipleSelect
+	function MultipleSelect(options) {
+		Select.call(this, options);
+		this.init(options);
+	};
+
+	MultipleSelect.prototype = Object.create(Select.prototype);
+	MultipleSelect.prototype.constructor = MultipleSelect;
+
+	var specializationSelect = new MultipleSelect({
+		element: $('#select-specialization'),
+		placeholder: 'Выбрать специализацию'
+	});
+
+
+	//Класс RangeSlider
+	var RangeSliderPrototype = {
+		init: function init(options) {
+			noUiSlider.create(this.element, options);
+		}
+	};
+
+	function RangeSlider(element, options) {
+		this.element = element;
+		this.init(options);
+	};
+
+	RangeSlider.prototype = Object.create(RangeSliderPrototype);
+	RangeSlider.prototype.constructor = RangeSlider;
+
+	var rangeSlider = $('.range-slider');
+	$(rangeSlider).each(function(index, slider) {
+		slider = new RangeSlider(slider, {
+			start: [0, 40000],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 100000
+			}
+		});
+	});
 });

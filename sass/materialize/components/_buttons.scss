@@ -10,14 +10,20 @@
   color: #000;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
-  &.table__btn {
-    width: 150px;
-    height: 33px;
-    line-height: 33px;
+  &.search-btn {
+    width: 100%;
     color:  #000000;
-    font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+    font-size: 0.938rem;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     text-align: center;
+    height: 53px;
+    line-height: 50px;
+    i.material-icons {
+      line-height: 1;
+      position: relative;
+      top: 4px;
+      font-weight: bold;
+    }
   }
 }
 
@@ -341,12 +347,13 @@ button.btn-floating {
 // Small button
 .btn-small {
   @extend .btn;
-  height: $button-small-height;
-  line-height: $button-small-height;
-  font-size: $button-small-font-size;
-  i {
-    font-size: $button-small-icon-font-size;
-  }
+  width: 150px;
+  height: 33px;
+  line-height: 33px;
+  color:  #000000;
+  font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
 }
 
 // Block button
