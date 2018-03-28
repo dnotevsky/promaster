@@ -15,7 +15,7 @@ html {
 }
 
 .container_sm {
-	padding: 0 30px;
+	//padding: 0 30px;
 }
 
 //Компоненты
@@ -25,3 +25,4 @@ html {
 @import "components/_last-orders.scss";
 @import "components/_statistics.scss";
 @import "components/_menu.scss";
+@import "components/_orders.scss";

@@ -55,7 +55,7 @@
 				</div>
 			</div>
 
-			<div class="content">
+			<div class="content orders__content">
 				<div class="container container_sm">
 					<div class="row">
 						<form class="col l3 s12 menu" action="" method="">
@@ -127,19 +127,19 @@
 							<button class="waves-effect waves-light btn search-btn" type="submit"><i class="material-icons">search</i> Поиск</button>
 						</form>
 						<div class="col l9 s12 orders">
-							<table>
+							<table class="orders__table">
 								<thead>
 									<tr>
-										<th>Найдено заказов <span class="num">40</span></th>
-										<th>Сортировать по <button class="btn">Дата добавления</button>
+										<th class="td__title">Найдено заказов <span class="num">40</span></th>
+										<th class="td__sort">Сортировать по <button class="btn active">Дата добавления</button>
 										<button class="btn">Бюджет</button>
 										<button class="btn">Участники</button></th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><img src="img/orders-page/1.jpg" alt=""></td>
-										<td>
+										<td class="td__img"><img src="img/orders-page/1.jpg" alt=""></td>
+										<td class="td__descr">
 											<h2>Частичный ремонт кухонной комнаты</h2>
 											<div class="subhead">
 												<span class="city">г. Кишинев</span> <a href="#" class="author">Галина Бунеева</a> <span class="date">24.02.2016</span>
@@ -147,9 +147,73 @@
 											<p class="description">Провести ремонтные работы по адресу г.Москва, Плеханова. В составе: Замена электропроводки, с установкой: квартирного электрощитка с размыкателями на 4 линии прокладку. Высота здания 12-17 этажей. Требуется сборка-разборка лесов, монтаж минваты 100м. на клей с дюбелированием, армирование, ... <a href="#" class="description__more">Подробнее</a></p>
 											<div class="bottom">
 												<p class="bottom__spec">Специализация: <span>Ремонт квартиры</span></p>
-												<span class="members">48</span>
+												<a href="#" class="waves-effect waves-light btn-small bottom__btn">Участвовать</a>
 												<span class="price"> <span class="num">50 000</span> леев</span>
-												<a href="#" class="waves-effect waves-light btn-small">Участвовать</a>
+												<span class="members">48</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td__img"><img src="img/orders-page/2.jpg" alt=""></td>
+										<td class="td__descr">
+											<h2>Требуется ремонт студии</h2>
+											<div class="subhead">
+												<span class="city">г. Единец</span> <a href="#" class="author">Антон Мешков</a> <span class="date">24.02.2016</span>
+											</div>
+											<p class="description">Провести ремонтные работы по адресу г.Москва, Плеханова. В составе: Замена электропроводки, с установкой: квартирного электрощитка с размыкателями на 4 линии прокладку. Высота здания 12-17 этажей. Требуется сборка-разборка лесов, монтаж минваты 100м. на клей с дюбелированием, армирование, ... <a href="#" class="description__more">Подробнее</a></p>
+											<div class="bottom">
+												<p class="bottom__spec">Специализация: <span>Отделочные работы</span></p>
+												<a href="#" class="waves-effect waves-light btn-small bottom__btn">Участвовать</a>
+												<span class="price"> <span class="num">50 000</span> леев</span>
+												<span class="members">48</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td__img"><img src="img/orders-page/1.jpg" alt=""></td>
+										<td class="td__descr">
+											<h2>Частичный ремонт кухонной комнаты</h2>
+											<div class="subhead">
+												<span class="city">г. Кишинев</span> <a href="#" class="author">Галина Бунеева</a> <span class="date">24.02.2016</span>
+											</div>
+											<p class="description">Провести ремонтные работы по адресу г.Москва, Плеханова. В составе: Замена электропроводки, с установкой: квартирного электрощитка с размыкателями на 4 линии прокладку. Высота здания 12-17 этажей. Требуется сборка-разборка лесов, монтаж минваты 100м. на клей с дюбелированием, армирование, ... <a href="#" class="description__more">Подробнее</a></p>
+											<div class="bottom">
+												<p class="bottom__spec">Специализация: <span>Ремонт квартиры</span></p>
+												<a href="#" class="waves-effect waves-light btn-small bottom__btn">Участвовать</a>
+												<span class="price"> <span class="num">50 000</span> леев</span>
+												<span class="members">48</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td__img"><img src="img/orders-page/3.jpg" alt=""></td>
+										<td class="td__descr">
+											<h2>Требуется ремонт студии</h2>
+											<div class="subhead">
+												<span class="city">г. Единец</span> <a href="#" class="author">Антон Мешков</a> <span class="date">24.02.2016</span>
+											</div>
+											<p class="description">Провести ремонтные работы по адресу г.Москва, Плеханова. В составе: Замена электропроводки, с установкой: квартирного электрощитка с размыкателями на 4 линии прокладку. Высота здания 12-17 этажей. Требуется сборка-разборка лесов, монтаж минваты 100м. на клей с дюбелированием, армирование, ... <a href="#" class="description__more">Подробнее</a></p>
+											<div class="bottom">
+												<p class="bottom__spec">Специализация: <span>Отделочные работы</span></p>
+												<a href="#" class="waves-effect waves-light btn-small bottom__btn">Участвовать</a>
+												<span class="price"> <span class="num">50 000</span> леев</span>
+												<span class="members">48</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td__img"><img src="img/orders-page/1.jpg" alt=""></td>
+										<td class="td__descr">
+											<h2>Частичный ремонт кухонной комнаты</h2>
+											<div class="subhead">
+												<span class="city">г. Кишинев</span> <a href="#" class="author">Галина Бунеева</a> <span class="date">24.02.2016</span>
+											</div>
+											<p class="description">Провести ремонтные работы по адресу г.Москва, Плеханова. В составе: Замена электропроводки, с установкой: квартирного электрощитка с размыкателями на 4 линии прокладку. Высота здания 12-17 этажей. Требуется сборка-разборка лесов, монтаж минваты 100м. на клей с дюбелированием, армирование, ... <a href="#" class="description__more">Подробнее</a></p>
+											<div class="bottom">
+												<p class="bottom__spec">Специализация: <span>Ремонт квартиры</span></p>
+												<a href="#" class="waves-effect waves-light btn-small bottom__btn">Участвовать</a>
+												<span class="price"> <span class="num">50 000</span> леев</span>
+												<span class="members">48</span>
 											</div>
 										</td>
 									</tr>
